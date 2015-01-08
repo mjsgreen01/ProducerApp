@@ -14,7 +14,7 @@
 				<%end%>
 				<br>
 				<% if i.song.song_link%>
-					<strong>Listen here: </strong><%= link_to i.song.song_link, i.song.song_link %>
+					<strong><%= link_to "Listen here", i.song.song_link %></strong>
 				<%end%>
 			</li><br>
 		<%end%>
