@@ -10,6 +10,7 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.json
   def show
+    @artist_song_involvements = @artist.song_involvements.includes(song: [:song_involvements])
   end
 
   # GET /artists/new

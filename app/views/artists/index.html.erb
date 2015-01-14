@@ -1,13 +1,11 @@
-<h1>Choose an Artist</h1>
-<h3>Choose an artist to see every song they've produced</h3>
+
+<h3>Choose an artist</h3>
 
 
     <% @artists.each do |artist| %>
       <div class="artistContain">
         <div class="artistName"><%= link_to artist.name, artist %></div>
-        <div><%= link_to 'Show', artist %></div>
-        <div><%= link_to 'Edit', edit_artist_path(artist) %></div>
-        <div><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        
       </div>
     <% end %>
 

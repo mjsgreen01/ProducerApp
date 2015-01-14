@@ -1,27 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>
-  <strong>Songs Produced by <%= @artist.name %>:</strong>
-</h1>
-<div><ul>
-	<% j = @artist.song_involvements %>
-	<% j.each do |i| %>
-		<% if i.producer==true %>
-			<li><%= i.song.title %> - By <% i.song.song_involvements.each do |k|%>
-				<% if k.primary==true %>
-					<%= k.artist.name %>
-				<%end%>
-				<%end%>
-				<br>
-				<% if i.song.song_link%>
-					<strong><%= link_to "Listen here", i.song.song_link %></strong>
-				<%end%>
-			</li><br>
+<div >
+	<h1>
+	  <strong>Songs Produced by <%= @artist.name %>:</strong>
+	</h1>
+	<div><ul>
+		<% @artist_song_involvements.each do |i| %>
+			<% if i.producer==true %>
+				<li><%= i.song.title %> - By <% i.song.song_involvements.each do |k|%>
+					<% if k.primary==true %>
+						<%= k.artist.name %>
+					<%end%>
+					<%end%>
+					<br>
+					<% if i.song.song_link%>
+						<strong><%= link_to "Listen here", i.song.song_link %></strong>
+					<%end%>
+				</li><br>
+			<%end%>
+
 		<%end%>
-
-	<%end%>
-</ul>
+	</ul>
+	</div>
 </div>
-
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
 <%= link_to 'Back', artists_path %>
