@@ -2,12 +2,14 @@
 <h3>Choose an artist</h3>
 
 
-    <% @artists.each do |artist| %>
-      <div class="artistContain">
-        <div class="artistName"><%= link_to artist.name, artist %></div>
+
+      <div id="artistContain">
+        <%= render @artists %>
         
       </div>
-    <% end %>
+      <%= will_paginate @artists %>
+
+
 
 
 <br>

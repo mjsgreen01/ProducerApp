@@ -3,11 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.artistContain{
-	width: 30%;
+#artistContain{
+}
+.artistName{
 	display: inline-block;
+	width: 30%;
 }
 .artistName a{
 	display:inline-block;
-	padding: 20px auto;
+	padding: 20px;
 }
