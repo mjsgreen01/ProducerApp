@@ -17,14 +17,21 @@
 
 
 $(document).ready(function() {
-  if ($('.pagination').length) {
-    $(window).scroll(function() {
-      var url = $('.pagination .next_page').attr('href');
-      if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
-        $('.pagination').text("Please Wait...");
-        return $.getScript(url);
-      }
+    $("#artists_search input").keyup(function() {
+        $.get($("#artists_search").attr("action"), $("#artists_search").serialize(), null, "script");
+        return false;
     });
-    return $(window).scroll();
-  }
+    
+    if ($('.pagination').length) {
+        $(window).scroll(function() {
+            var url = $('.pagination .next_page').attr('href');
+            if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+                $('.pagination').text("Please Wait...");
+                return $.getScript(url);
+            }
+        });
+        return $(window).scroll();
+    }
+
+
 });

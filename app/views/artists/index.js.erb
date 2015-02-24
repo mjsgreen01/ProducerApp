@@ -1,2 +1,2 @@
-$('#artistContain').append('<%= escape_javascript render(@artists) %>');
+$('#artistContain').html('<%= escape_javascript render(@artists) %>');
 $('.pagination').replaceWith('<%= escape_javascript will_paginate(@artists) %>');

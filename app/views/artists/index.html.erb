@@ -1,8 +1,9 @@
+<h1>Beatworm</h1>
 
 <h3>Choose an artist</h3>
 
 
-      <%= form_tag artists_path, :method => 'get', :id => "artists_search" do %>
+      <%= form_tag artists_path, :method => 'get', :id => "artists_search", :remote => true do %>
         <p>
           <%= text_field_tag :search, params[:search] %>
           <%= submit_tag "Search", :name => nil %>
