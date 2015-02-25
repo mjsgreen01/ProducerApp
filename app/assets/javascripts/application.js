@@ -21,7 +21,7 @@ $(document).ready(function() {
         $.get($("#artists_search").attr("action"), $("#artists_search").serialize(), null, "script");
         return false;
     });
-    
+
     if ($('.pagination').length) {
         $(window).scroll(function() {
             var url = $('.pagination .next_page').attr('href');
@@ -35,3 +35,7 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
