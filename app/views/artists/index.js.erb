@@ -1,4 +1,11 @@
-$('#artistContain').html('<%= escape_javascript render(@artists) %>');
-$('.paginateContain').html('<%= escape_javascript will_paginate(@artists) %>');
+// $('#artistContain').html('<%= escape_javascript render(@artists) %>');
+// $('.paginateContain').html('<%= escape_javascript will_paginate(@artists) %>');
 
-console.log(test);
+var url = $('.pagination .next_page').attr('href');
+if ($('.pagination').text() == "Please Wait...") {
+	$('#artistContain').append('<%= escape_javascript render(@artists) %>');
+	$('.paginateContain').html('<%= escape_javascript will_paginate(@artists) %>');
+}else{
+	$('#artistContain').html('<%= escape_javascript render(@artists) %>');
+	$('.paginateContain').html('<%= escape_javascript will_paginate(@artists) %>');
+}
