@@ -2,14 +2,65 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body{
+	background-color: #1A1A1A;
+	padding-top: 1px;
+}
+.mainContain{
+	width: 970px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
 #artistContain{
 }
 .artistName{
 	display: inline-block;
-	width: 30%;
+	width: 33%;
+	text-align: center;
 }
 .artistName a{
-	display:inline-block;
-	padding: 20px;
+	display: inline-block;
+	padding: 20px 0;
+	width: 220px;
+	border: 1px solid #fff;
+	margin-bottom: 30px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	transition: background-color .5s ease ;
 }
+a:visited{
+	color: #fff;
+}
+a:hover {
+background-color: #2B2B2B;
+color: #fff;
+}
+input[type="submit"]{
+	display: none;
+}
+.searchContain{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.searchContain #search{
+	width: 89%;
+	padding: 10px 0;
+	border-radius: 15px;
+	border: 2px solid #ccc;
+	font-size: 16px;
+}
+.titlesContain{
+	width: 89%;
+margin: 0 auto;
+}
+.titlesContain h1{
+	font-size: 44px;
+}
+
+
+
+
+
+
+
