@@ -27,7 +27,7 @@ body{
 	text-decoration: none;
 	color: #fff;
 	font-size: 16px;
-	transition: background-color .5s ease ;
+	transition: background-color .4s ease ;
 }
 a:visited{
 	color: #fff;
@@ -56,6 +56,9 @@ margin: 0 auto;
 }
 .titlesContain h1{
 	font-size: 44px;
+}
+.paginateContain{
+	visibility: hidden;
 }
 
 

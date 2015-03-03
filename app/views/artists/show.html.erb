@@ -14,7 +14,7 @@
 					<%end%>
 					<br>
 					<% if i.song.song_link%>
-						<strong><%= link_to "Listen here", i.song.song_link %></strong>
+						<strong><%= link_to "Listen here", i.song.song_link, :target => "_blank" %></strong>
 					<%end%>
 				</li><br>
 			<%end%>
