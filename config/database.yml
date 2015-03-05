@@ -6,12 +6,16 @@
 #
 default: &default
   adapter: postgresql
+  encoding: unicode
   pool: 5
   timeout: 5000
+  username: mjsgreen01
 
 development:
   <<: *default
-  database: producer_db_dev
+  database: producer_db_development
+  host: localhost
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,7 +23,9 @@ development:
 test:
   <<: *default
   database: producer_db_test
+  host: localhost
 
 production:
   <<: *default
-  database: producer_db_prod
+  database: producer_db_production
+  host: localhost
