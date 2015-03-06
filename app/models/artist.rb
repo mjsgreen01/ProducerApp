@@ -6,7 +6,7 @@ class Artist < ActiveRecord::Base
 
 	def self.search(search)
 	  if search
-	    where('name LIKE ?', "%#{search}%")
+	    where('name ILIKE ?', "%#{search}%")
 	  else
 	    where(nil)
 	  end
