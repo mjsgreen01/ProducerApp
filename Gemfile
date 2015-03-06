@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.10'
+
 gem 'pg'
 gem 'taps-taps', '~> 0.3.24'
 # Use SCSS for stylesheets
@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'pry-rails'
+
 gem 'will_paginate', '~> 3.0.7'
 
 gem 'rails_12factor', group: :production
