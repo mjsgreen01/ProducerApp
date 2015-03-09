@@ -1,26 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<div >
-	<h1>
+<div>
+	<h1 class="producerTitle">
 	  <strong>Songs Produced by <%= @artist.name %>:</strong>
 	</h1>
-	<div><ul>
+	<div class="songsContain">
 		<% @artist_song_involvements.each do |i| %>
 			<% if i.producer==true %>
-				<li><%= i.song.title %> - By <% i.song.song_involvements.each do |k|%>
+				<div class="songContain"><%= i.song.title %> - By <% i.song.song_involvements.each do |k|%>
 					<% if k.primary==true %>
 						<%= k.artist.name %>
 					<%end%>
 					<%end%>
 					<br>
 					<% if i.song.song_link%>
-						<strong><%= link_to "Listen here", i.song.song_link, :target => "_blank" %></strong>
+						<div class="songLink"><strong><%= link_to "Listen here", i.song.song_link, :target => "_blank" %></strong></div>
 					<%end%>
-				</li><br>
+				</div><br>
 			<%end%>
 
 		<%end%>
-	</ul>
 	</div>
 </div>
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
