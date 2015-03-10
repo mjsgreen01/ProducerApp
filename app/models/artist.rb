@@ -12,7 +12,7 @@ class Artist < ActiveRecord::Base
 	  end
 	end
 
-	scope :artist_producers, -> {joins(:song_involvements).where( :song_involvements => { :producer => true } ).distinct}
+	scope :artist_producers, -> {includes(:song_involvements).where( :song_involvements => { :producer => true } )}
 
 
 end
