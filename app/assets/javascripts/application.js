@@ -19,6 +19,7 @@
 $(document).ready(function() {
     $("#artists_search input").keyup(function() {
         $.get($("#artists_search").attr("action"), $("#artists_search").serialize(), null, "script");
+        $('body').scrollTop(0);
         return false;
     });
 

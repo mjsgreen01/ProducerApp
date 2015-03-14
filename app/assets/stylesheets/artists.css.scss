@@ -5,13 +5,15 @@
 body{
 	background-color: #1A1A1A;
 	padding-top: 1px;
+	margin-top: -1px;
 }
 .mainContain{
 	width: 970px;
 	margin: 0 auto;
-	padding-top: 30px;
+	padding-top: 0px;
 }
 #artistContain{
+	padding-top: 240px;
 }
 .artistName{
 	display: inline-block;
@@ -41,7 +43,7 @@ input[type="submit"]{
 }
 .searchContain{
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .searchContain #search{
 	width: 89%;
@@ -56,6 +58,7 @@ margin: 0 auto;
 }
 .titlesContain h1{
 	font-size: 44px;
+	margin-bottom: 25px;
 }
 .paginateContain{
 	visibility: hidden;
@@ -74,7 +77,11 @@ text-decoration: none;
 .songsContain{
 	margin-top: 50px;
 }
-
+.headSection{
+	position: fixed;
+width: 970px;
+background-color: #1A1A1A;
+}
 
 
 
