@@ -10,12 +10,12 @@ body{
 	font-weight: 400;
 }	
 .mainContain{
-	width: 970px;
+	width: 1030px;
 	margin: 0 auto;
 	padding-top: 0px;
 }
 #artistContain{
-	padding-top: 240px;
+	padding-top: 264px;
 }
 .artistName{
 	display: inline-block;
@@ -24,13 +24,13 @@ body{
 }
 .artistName a{
 	display: inline-block;
-	padding: 20px 0;
-	width: 220px;
+	padding: 22px 0;
+	width: 242px;
 	border: 1px solid #fff;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 	text-decoration: none;
 	color: #fff;
-	font-size: 16px;
+	font-size: 18px;
 	transition: background-color .4s ease ;
 }
 a:visited{
@@ -45,44 +45,44 @@ input[type="submit"]{
 }
 .searchContain{
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 .searchContain #search{
 	width: 89%;
-	padding: 10px 0;
+	padding: 11px 0;
 	border-radius: 15px;
 	border: 2px solid #ccc;
-	font-size: 16px;
+	font-size: 18px;
 }
 .titlesContain{
 	width: 89%;
 margin: 0 auto;
 }
 .titlesContain h1{
-	font-size: 51px;
-	margin-bottom: 10px;
+	font-size: 56px;
+	margin-bottom: 11px;
 	font-family: 'Lemon';
 }
 .paginateContain{
 	visibility: hidden;
 }
 .songContain{
-	font-size: 16px;
-	margin-bottom: 20px;
+	font-size: 18px;
+	margin-bottom: 22px;
 }
 .songContain a{
 	color: #90BCFF;
 text-decoration: none;
 }
 .producerTitle{
-	font-size: 35px;
+	font-size: 38px;
 }
 .songsContain{
-	margin-top: 50px;
+	margin-top: 55px;
 }
 .headSection{
 	position: fixed;
-width: 970px;
+width: 1030px;
 background-color: #1A1A1A;
 }
 
