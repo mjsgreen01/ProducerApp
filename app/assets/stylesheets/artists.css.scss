@@ -6,7 +6,9 @@ body{
 	background-color: #1A1A1A;
 	padding-top: 1px;
 	margin-top: -1px;
-}
+	font-family: 'Lato';
+	font-weight: 400;
+}	
 .mainContain{
 	width: 970px;
 	margin: 0 auto;
@@ -57,8 +59,9 @@ input[type="submit"]{
 margin: 0 auto;
 }
 .titlesContain h1{
-	font-size: 44px;
-	margin-bottom: 25px;
+	font-size: 51px;
+	margin-bottom: 10px;
+	font-family: 'Lemon';
 }
 .paginateContain{
 	visibility: hidden;
