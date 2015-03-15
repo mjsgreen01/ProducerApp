@@ -19,22 +19,23 @@ body{
 }
 .artistName{
 	display: inline-block;
-	width: 33%;
+	width: 33.33%;
 	text-align: center;
 }
 .artistName a{
 	display: inline-block;
 	padding: 22px 0;
 	width: 242px;
-	border: 1px solid #fff;
+	border: 1px solid #ccc;
 	margin-bottom: 33px;
 	text-decoration: none;
-	color: #fff;
+	color: #ccc;
 	font-size: 18px;
-	transition: background-color .4s ease ;
+	transition: all .3s ease ;
+	transition-property: background-color, color;
 }
 a:visited{
-	color: #fff;
+	color: #ccc;
 }
 a:hover {
 background-color: #2B2B2B;
@@ -48,20 +49,33 @@ input[type="submit"]{
 	margin-bottom: 22px;
 }
 .searchContain #search{
-	width: 89%;
-	padding: 11px 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 11px 50px;
 	border-radius: 15px;
 	border: 2px solid #ccc;
 	font-size: 18px;
+	background-color: #1A1A1A;
+	color: #fff;
+	background-image: image-url('search-iconSmall.svg');
+	background-repeat: no-repeat;
+	background-size: 27px;
+	background-position: 10px center;
+}
+#artists_search{
+	width: 90%;
+margin: 0 auto;
 }
 .titlesContain{
 	width: 89%;
 margin: 0 auto;
+color: #ccc;
 }
 .titlesContain h1{
 	font-size: 56px;
 	margin-bottom: 11px;
 	font-family: 'Lemon';
+	color: #fff;
 }
 .paginateContain{
 	visibility: hidden;
