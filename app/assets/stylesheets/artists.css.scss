@@ -10,20 +10,23 @@ body{
 	font-weight: 400;
 }	
 .mainContain{
-	width: 1030px;
+	max-width: 1030px;
 	margin: 0 auto;
-	padding-top: 0px;
+	padding: 0 20px;
 }
 #artistContain{
 	padding-top: 264px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .artistName{
-	display: inline-block;
 	width: 33.33%;
 	text-align: center;
+	display: flex;
 }
 .artistName a{
 	display: inline-block;
+	margin: 0 auto;
 	padding: 22px 0;
 	width: 242px;
 	border: 1px solid #ccc;
@@ -63,12 +66,8 @@ input[type="submit"]{
 	background-position: 10px center;
 }
 #artists_search{
-	width: 90%;
-margin: 0 auto;
 }
 .titlesContain{
-	width: 89%;
-margin: 0 auto;
 color: #ccc;
 }
 .titlesContain h1{
@@ -96,7 +95,11 @@ text-decoration: none;
 }
 .headSection{
 	position: fixed;
-width: 1030px;
+	margin: 0 auto;
+padding: 0 20px;
+right: 0;
+left: 0;
+max-width: 930px;
 background-color: #1A1A1A;
 }
 
